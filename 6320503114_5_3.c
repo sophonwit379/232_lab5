@@ -2,7 +2,7 @@
 #include<math.h>
 int main()
 {
-    int i,j,k=0,n,num,check,mod[3]={2,3,5};
+    int i,j=0,k=0,n,num,check,mod[3]={2,3,5};
     scanf("%d",&n);
     for(i=1;k<n;i++)
     {
@@ -15,8 +15,13 @@ int main()
                 j++;
         }
         j=0;
-
+        if(check==1)
+        {
+            num=i;
+            k++;
+        }
     }
+    printf("%d",num);
 
 }
 
