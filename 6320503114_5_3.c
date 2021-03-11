@@ -9,12 +9,13 @@ int main()
         check=i;
         while(j!=3)
         {
-            if(x%mod[j]==0)
-                x/=mod[j];
+            if(check%mod[j]==0)
+                check/=mod[j];
             else
                 j++;
         }
         j=0;
+
     }
 
 }
